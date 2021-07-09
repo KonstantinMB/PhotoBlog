@@ -1,0 +1,97 @@
+body {
+  font-family: "Otomanopee One", sans-serif;
+}
+
+img {
+  width: 28%;
+  margin: calc(10% / 3.9);
+}
+
+nav {
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid #f1f1f1;
+  padding: 10px 0 10px 0;
+  font-size: 1.5em;
+}
+
+h2 {
+  text-align: center;
+  margin: 1.5em;
+}
+
+#container {
+  background-color: #003049;
+  width: 90%;
+  height: 400px;
+  margin: auto;
+  border: 5px solid #003049;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#container div {
+  width: 150px;
+  height: 150px;
+  margin-right: 5px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#container_two {
+  background-color: #003049;
+  width: 90%;
+  height: 400px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 5px solid #003049;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#container_two div {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+/* If you want to get a specific item from a container ( div elements in this scenario), use the nth-of-type(n)
+ where n is the index of the elemetn you wanna target  */
+#container_two div:nth-of-type(3) {
+  align-self: center;
+}
+#container_two div:nth-of-type(4) {
+  align-self: flex-end;
+}
+
+/* Media Queries */
+/* @media (min-width: 400px) and (max-width: 600px) {
+  h2 {
+    color: blue;
+  }
+*/
+@media (max-width: 768px) {
+  h2 {
+    color: greenyellow;
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    color: greenyellow;
+    font-size: 1.1em;
+  }
+}
+
+/* 
+@media (orientation: landscape) {
+  body {
+    background-color: magenta;
+  }
+} */
